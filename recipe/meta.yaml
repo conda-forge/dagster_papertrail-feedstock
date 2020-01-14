@@ -1,13 +1,13 @@
 {% set name = "dagster_papertrail" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 7e20db76991b4982dfc290a6a40c9ff8b2be08fd8d7faf68895d1dea57fea597
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name|replace('_', '-') }}/{{ name|replace('_', '-') }}-{{ version }}.tar.gz"
+  sha256: e22d107ddd96cad876783041cd85da69b0d71357f993bfe3d88b95c5f6d5809f
 
 build:
   number: 0
